@@ -166,7 +166,7 @@ form.addEventListener('submit', async (e) => {
     
     try {
         // Send to webhook
-        const response = await fetch('https://tu-dominio-n8n.com/webhook/estetica-reservas', {
+        const response = await fetch('https://n8ninstance.mavie.cfd/webhook-test/c00c3549-04de-4dff-9696-f0fd92fb6fc4', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
