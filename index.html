@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Estética Belleza Natural – Reserva tu cita online</title>
+    <meta name="description" content="Centro de estética especializado en tratamientos faciales y corporales. Descubre nuestros servicios de belleza y reserva tu cita online.">
+    <meta name="keywords" content="estética, belleza, tratamientos, reserva online, Belleza Natural, centro estética">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Flatpickr -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://npmcdn.com/flatpickr/dist/themes/airbnb.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div class="logo">
+                <!-- SVG Logo -->
+                <svg class="logo__svg" viewBox="0 0 50 50" width="40" height="40">
+                    <circle cx="25" cy="25" r="20" fill="var(--accent)"/>
+                    <path d="M15,25 Q25,35 35,25" stroke="var(--bg)" fill="none" stroke-width="2"/>
+                </svg>
+                <span class="logo__text">Belleza Natural</span>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#inicio" class="nav__link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav__link">Servicios</a></li>
+                    <li><a href="#sobre" class="nav__link">Sobre</a></li>
+                    <li><a href="#contacto" class="nav__link">Contacto</a></li>
+                    <li><a href="#faq" class="nav__link">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero__container">
+                <h1 class="hero__title">Tu belleza natural potenciada</h1>
+                <p class="hero__subtitle">Descubre tratamientos personalizados para resaltar tu mejor versión</p>
+                <a href="#contacto" class="btn btn--primary">Reserva tu cita</a>
+            </div>
+        </section>
+
+        <!-- Sobre Section -->
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <h2 class="section-title">Sobre Nosotros</h2>
+                <div class="sobre__grid">
+                    <div class="sobre__content">
+                        <div class="sobre__image-wrapper">
+                            <img src="https://via.placeholder.com/150" alt="Directora del centro" class="sobre__image">
+                        </div>
+                        <div class="sobre__text">
+                            <h3>María González</h3>
+                            <p>Con más de 15 años de experiencia en el sector de la estética, nuestro centro se especializa en tratamientos personalizados que realzan tu belleza natural.</p>
+                        </div>
+                    </div>
+                    <div class="sobre__experience">
+                        <img src="assets/face-treatment.gif" alt="Demostración de tratamiento facial" class="sobre__gif">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios Section -->
+        <section id="servicios" class="servicios">
+            <div class="container">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <div class="servicios__grid">
+                    <article class="servicio-card">
+                        <svg class="servicio-card__icon" viewBox="0 0 24 24" width="40" height="40">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <h3>Tratamientos Faciales</h3>
+                        <ul>
+                            <li>Limpieza profunda</li>
+                            <li>Hidratación</li>
+                            <li>Anti-edad</li>
+                        </ul>
+                    </article>
+                    <!-- More service cards... -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Section - Feng Shui Style -->
+        <section id="contacto" class="contacto">
+            <div class="container">
+                <h2 class="section-title">Reserva tu Experiencia de Bienestar</h2>
+                <form id="reservaForm" class="form">
+                    <div class="form__group">
+                        <label for="nombre">Tu Nombre Completo</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="¿Cómo te llamas?">
+                    </div>
+                    <div class="form__group">
+                        <label for="email">Tu Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Para mantenerte informado">
+                    </div>
+                    <div class="form__group">
+                        <label for="telefono">Tu Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Para confirmaciones">
+                    </div>
+                    <div class="form__group">
+                        <label for="servicio">Elige tu Tratamiento</label>
+                        <select id="servicio" name="servicio" required>
+                            <option value="">Selecciona una experiencia</option>
+                            <option value="facial">Tratamiento Facial Armonizante</option>
+                            <option value="masaje">Masaje Relajante Zen</option>
+                            <option value="depilacion">Depilación con Cuidado Natural</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="fecha">Fecha Deseada</label>
+                        <input type="text" id="fecha" name="fecha" required placeholder="Elige tu día">
+                    </div>
+                    <div class="form__group">
+                        <label for="hora">Momento del Día</label>
+                        <select id="hora" name="hora" required disabled>
+                            <option value="">Selecciona primero una fecha</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="mensaje">¿Algo más que debamos saber?</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuéntanos tus preferencias..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary">Reservar Mi Experiencia</button>
+                </form>
+            </div>
+            <!-- Mensaje de Respuesta -->
+            <div class="form-response">
+                <p class="response-text"></p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq__list">
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            ¿Cuál es el método de pago?
+                            <span class="faq__icon"></span>
+                        </button>
+                        <div class="faq__answer">
+                            <p>Aceptamos efectivo y todas las tarjetas de crédito/débito principales. También ofrecemos la opción de pago por transferencia bancaria.</p>
+                        </div>
+                    </div>
+                    <!-- More FAQ items... -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Belleza Natural. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://npmcdn.com/flatpickr/dist/l10n/es.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
